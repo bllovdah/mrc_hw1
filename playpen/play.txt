@@ -1,0 +1,18 @@
+bllovdah@ama:~/playpen/dir1$ cd ~
+bllovdah@ama:~$ ls
+Desktop    Downloads  Music        Pictures  Public   Templates
+Documents  file       mydirectory  playpen   sandbox  Videos
+bllovdah@ama:~$ cd playpen
+bllovdah@ama:~/playpen$ ls
+commands.txt  dir1  dir2
+bllovdah@ama:~/playpen$ mv dir1 folder1
+bllovdah@ama:~/playpen$ ls
+commands.txt  dir2  folder1
+bllovdah@ama:~/playpen$ mv dir2 folder2
+bllovdah@ama:~/playpen$ ls
+commands.txt  folder1  folder2
+bllovdah@ama:~/playpen$ mv commands.txt play.txt
+bllovdah@ama:~/playpen$ ls
+folder1  folder2  play.txt
+bllovdah@ama:~/playpen$ 
+

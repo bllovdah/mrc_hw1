@@ -1,0 +1,65 @@
+bllovdah@ama:~$ git config --global user.name "bllovdah"
+bllovdah@ama:~$ git config --global user.email bllovdah@nps.edu
+bllovdah@ama:~$ cd ~
+bllovdah@ama:~$ git config --list
+user.name=bllovdah
+user.email=bllovdah@nps.edu
+bllovdah@ama:~$ mkdir mydirectory
+bllovdah@ama:~$ ls
+Desktop    Downloads  Music        Pictures  Templates
+Documents  file       mydirectory  Public    Videos
+bllovdah@ama:~$ mkdir sandbox
+bllovdah@ama:~$ gedit commands.txt
+bllovdah@ama:~$ ls
+commands.txt  Documents  file   mydirectory  Public   Templates
+Desktop       Downloads  Music  Pictures     sandbox  Videos
+bllovdah@ama:~$ mv commands.txt sandbox
+bllovdah@ama:~$ ls
+Desktop    Downloads  Music        Pictures  sandbox    Videos
+Documents  file       mydirectory  Public    Templates
+bllovdah@ama:~$ cd sandbox
+bllovdah@ama:~/sandbox$ ls
+commands.txt
+bllovdah@ama:~/sandbox$ mkdir dir1
+bllovdah@ama:~/sandbox$ mkdir dir2
+bllovdah@ama:~/sandbox$ cd dir1
+bllovdah@ama:~/sandbox/dir1$ gedit file1.txt
+bllovdah@ama:~/sandbox/dir1$ ls
+file1.txt
+bllovdah@ama:~/sandbox/dir1$ cd dir2
+bash: cd: dir2: No such file or directory
+bllovdah@ama:~/sandbox/dir1$ cd ~
+bllovdah@ama:~$ ls
+Desktop    Downloads  Music        Pictures  sandbox    Videos
+Documents  file       mydirectory  Public    Templates
+bllovdah@ama:~$ cd sandbox
+bllovdah@ama:~/sandbox$ ls
+commands.txt  dir1  dir2
+bllovdah@ama:~/sandbox$ cd dir2
+bllovdah@ama:~/sandbox/dir2$ gedit file2.txt
+bllovdah@ama:~/sandbox/dir2$ ls
+file2.txt
+
+bllovdah@ama:~/sandbox/dir2$ cd ~
+bllovdah@ama:~$ ls
+Desktop    Downloads  Music        Pictures  sandbox    Videos
+Documents  file       mydirectory  Public    Templates
+bllovdah@ama:~$ cp sandbox playpen
+cp: omitting directory 'sandbox'
+bllovdah@ama:~$ ls
+Desktop    Downloads  Music        Pictures  sandbox    Videos
+Documents  file       mydirectory  Public    Templates
+bllovdah@ama:~$ cp -R sandbox playpen
+bllovdah@ama:~$ ls
+Desktop    Downloads  Music        Pictures  Public   Templates
+Documents  file       mydirectory  playpen   sandbox  Videos
+bllovdah@ama:~$ cd playpen
+bllovdah@ama:~/playpen$ ls
+commands.txt  dir1  dir2
+bllovdah@ama:~/playpen$ cd dir1
+bllovdah@ama:~/playpen/dir1$ ls
+file1.txt
+
+
+
+
